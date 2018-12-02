@@ -23,7 +23,7 @@ Compatible with iTop 2.3+
 
 *Your folders should look like this*
 
-![Extensions folder](https://raw.githubusercontent.com/Molkobain/itop-handy-framework/master/docs/mct-install.PNG)
+![Extensions folder](https://raw.githubusercontent.com/Molkobain/itop-handy-framework/master/docs/mhf-install.PNG)
 
 ### Configuration
 No configuration needed.
