@@ -40,7 +40,7 @@ No configuration needed.
 
 #### Parameters
 The extension has only 1 configuration parameter:
-  * enabled: Enable or disable extension. Possible values are true|false, default is true.
+  * `enabled`: Enable or disable extension. Possible values are `true`|`false`, default is `true`.
 
 
 ### Licensing
