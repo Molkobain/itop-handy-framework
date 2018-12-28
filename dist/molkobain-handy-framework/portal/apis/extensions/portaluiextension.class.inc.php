@@ -13,65 +13,69 @@ use AbstractPortalUIExtension;
 use Silex\Application;
 use Molkobain\iTop\Extension\HandyFramework\Common\Helper\ConfigHelper;
 
-/**
- * Class PortalUIExtension
- *
- * @package Molkobain\iTop\Extension\HandyFramework\Portal\Extension
- */
-class PortalUIExtension extends AbstractPortalUIExtension
+// Protection for iTop 2.3 and older
+if(class_exists('AbstractPortalUIExtension'))
 {
-    /**
-     * @inheritdoc
-     */
-    public function GetCSSFiles(Application $oApp)
-    {
-        // Check if enabled
-        if(ConfigHelper::IsEnabled() === false)
-        {
-            return array();
-        }
+	/**
+	 * Class PortalUIExtension
+	 *
+	 * @package Molkobain\iTop\Extension\HandyFramework\Portal\Extension
+	 */
+	class PortalUIExtension extends AbstractPortalUIExtension
+	{
+		/**
+		 * @inheritdoc
+		 */
+		public function GetCSSFiles(Application $oApp)
+		{
+			// Check if enabled
+			if(ConfigHelper::IsEnabled() === false)
+			{
+				return array();
+			}
 
-        $sModuleVersion = ConfigHelper::GetModuleVersion();
-        $sURLBase = ConfigHelper::GetAbsoluteModuleUrl();
+			$sModuleVersion = ConfigHelper::GetModuleVersion();
+			$sURLBase = ConfigHelper::GetAbsoluteModuleUrl();
 
-        // Note: Here we pass the compiled .css file in order to be compatible with iTop 2.5 and earlier (ApplicationHelper::LoadUIExtensions() refactoring that uses utils::GetCSSFromSASS())
-        $aReturn = array(
-            $sURLBase . 'common/css/handy-framework.css?v=' . $sModuleVersion,
-        );
+			// Note: Here we pass the compiled .css file in order to be compatible with iTop 2.5 and earlier (ApplicationHelper::LoadUIExtensions() refactoring that uses utils::GetCSSFromSASS())
+			$aReturn = array(
+				$sURLBase . 'common/css/handy-framework.css?v=' . $sModuleVersion,
+			);
 
-        return $aReturn;
-    }
+			return $aReturn;
+		}
 
-    /**
-     * @inheritdoc
-     */
-    public function GetJSFiles(Application $oApp)
-    {
-	    // Check if enabled
-	    if(ConfigHelper::IsEnabled() === false)
-	    {
-	        return array();
-	    }
+		/**
+		 * @inheritdoc
+		 */
+		public function GetJSFiles(Application $oApp)
+		{
+			// Check if enabled
+			if(ConfigHelper::IsEnabled() === false)
+			{
+				return array();
+			}
 
-	    $sModuleVersion = ConfigHelper::GetModuleVersion();
-	    $sURLBase = ConfigHelper::GetAbsoluteModuleUrl();
+			$sModuleVersion = ConfigHelper::GetModuleVersion();
+			$sURLBase = ConfigHelper::GetAbsoluteModuleUrl();
 
-	    $aJSFiles = array(
-	    	$sURLBase . 'common/js/handy-framework.js?v=' . $sModuleVersion,
-	    );
+			$aJSFiles = array(
+				$sURLBase . 'common/js/handy-framework.js?v=' . $sModuleVersion,
+			);
 
-        return $aJSFiles;
-    }
+			return $aJSFiles;
+		}
 
-    /**
-     * @inheritdoc
-     *
-     * @throws \DictExceptionMissingString
-     */
-    public function GetJSInline(Application $oApp)
-    {
-        $sJSInline = '';
+		/**
+		 * @inheritdoc
+		 *
+		 * @throws \DictExceptionMissingString
+		 */
+		public function GetJSInline(Application $oApp)
+		{
+			$sJSInline = '';
 
-        return $sJSInline;
-    }
+			return $sJSInline;
+		}
+	}
 }
