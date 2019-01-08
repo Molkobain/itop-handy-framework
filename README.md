@@ -1,7 +1,7 @@
 # iTop extension: molkobain-handy-framework
 * [Description](#description)
-* [Compatibility](#compatibility)
 * [Content](#content)
+* [Compatibility](#compatibility)
 * [Installation](#installation)
 * [Configuration](#configuration)
 
