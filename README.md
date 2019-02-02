@@ -20,16 +20,20 @@ This extension doesn't bring any features, it is meant to used by some extension
  ![Attribute rack unit after](https://raw.githubusercontent.com/Molkobain/itop-handy-framework/develop/docs/mhf-attributerackunit-01-after.png)
 
 ### UI
-#### Toggle buttons
-Display checkboxes as nice toggle buttons in forms by using `UIHelper::MakeToggleButton()`.
-
 #### Console tooltips
-Adds the new `molkobain-light` and `molkobain-dark` themes to qTip tooltips for a more modern look & feel.
+Use the new `molkobain-light` and `molkobain-dark` themes to qTip tooltips for a more modern look & feel.
 
 *Tooltip with the regular `light` theme and with the new `molkobain-light`theme.*
 
 ![Light tooltip before](https://raw.githubusercontent.com/Molkobain/itop-handy-framework/develop/docs/mhf-tooltip-light-01-before.png)
 ![Light tooltip after](https://raw.githubusercontent.com/Molkobain/itop-handy-framework/develop/docs/mhf-tooltip-light-01-after.png)
+
+#### Toggle buttons
+Display checkboxes as nice toggle buttons in forms by using `UIHelper::MakeToggleButton()`.
+
+#### Lodaing overlay
+Use the `.mhf-loader` class to have a nice overlay when you need to block some parts of the UI.
+Toggle `.mhf-hide` class on it to hide / show it. 
 
 ## Compatibility
 Compatible with iTop 2.4+
