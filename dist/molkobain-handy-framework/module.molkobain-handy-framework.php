@@ -34,6 +34,7 @@ SetupWebPage::AddModule(
 			'core/attributerackunit.class.inc.php',
 		    'common/confighelper.class.inc.php',
 		    'common/uihelper.class.inc.php',
+		    'common/ui/togglebutton.class.inc.php',
 		    'console/pageuiextension.class.inc.php',
             'portal/apis/extensions/portaluiextension.class.inc.php',
 		),
