@@ -31,7 +31,7 @@ Use the new `molkobain-light` and `molkobain-dark` themes to qTip tooltips for a
 #### Toggle buttons
 Display checkboxes as nice toggle buttons in forms by using `UIHelper::MakeToggleButton()`.
 
-#### Lodaing overlay
+#### Loading overlay
 Use the `.mhf-loader` class to have a nice overlay when you need to block some parts of the UI.
 Toggle `.mhf-hide` class on it to hide / show it. 
 
