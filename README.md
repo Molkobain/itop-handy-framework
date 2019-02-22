@@ -2,6 +2,7 @@
 * [Description](#description)
 * [Content](#content)
 * [Compatibility](#compatibility)
+* [Downloads](#downloads)
 * [Installation](#installation)
 * [Configuration](#configuration)
 
@@ -37,6 +38,11 @@ Toggle `.mhf-hide` class on it to hide / show it.
 
 ## Compatibility
 Compatible with iTop 2.4+
+
+## Downloads
+Stable releases can be found on the [releases page](https://github.com/Molkobain/itop-handy-framework/releases).
+
+Downloading it directly from the *Clone or download* will get you the version under development which might be unstable.
 
 ## Installation
 * Unzip the extension
