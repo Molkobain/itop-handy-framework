@@ -66,3 +66,10 @@ if($.isFunction($.fn.qtip))
 		},
 	}
 }
+
+// Panels
+// - Toggler
+$(document).on('click', '.mhf-panel .mhf-ph-toggler', function(oEvent){
+	oEvent.stopPropagation();
+	$(this).closest('.mhf-panel').toggleClass('mhf-collapsed');
+});
