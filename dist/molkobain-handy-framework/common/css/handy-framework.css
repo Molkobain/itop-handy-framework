@@ -106,6 +106,16 @@
   box-shadow: 0 1px 1px rgba(0, 0, 0, 0.15);
   transition: all 0.2s ease-in-out;
 }
+.mhf-panel .mhf-p-body:empty {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.mhf-panel .mhf-p-body:empty::after {
+  content: attr(data-empty-text);
+  color: #777;
+  font-style: italic;
+}
 .mhf-panel:last-child {
   margin-bottom: 0;
 }
@@ -119,6 +129,9 @@
 }
 .mhf-panel.mhf-collapsed .mhf-p-body > * {
   display: none;
+}
+.mhf-panel.mhf-collapsed .mhf-p-body:empty::after {
+  content: "";
 }
 /* Tooltips */
 .mhf-tooltip {
