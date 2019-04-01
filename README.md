@@ -17,8 +17,8 @@ This extension doesn't bring any features, it is meant to used by some extension
 
 *Example on a server with the `Position` attribute before and after using the new rack unit type*
 
- ![Attribute rack unit before](https://raw.githubusercontent.com/Molkobain/itop-handy-framework/develop/docs/mhf-attributerackunit-01-before.png)
- ![Attribute rack unit after](https://raw.githubusercontent.com/Molkobain/itop-handy-framework/develop/docs/mhf-attributerackunit-01-after.png)
+ ![Attribute rack unit before](docs/mhf-attributerackunit-01-before.png)
+ ![Attribute rack unit after](docs/mhf-attributerackunit-01-after.png)
 
 ### UI
 #### Console tooltips
@@ -26,8 +26,8 @@ Use the new `molkobain-light` and `molkobain-dark` themes to qTip tooltips for a
 
 *Tooltip with the regular `light` theme and with the new `molkobain-light`theme.*
 
-![Light tooltip before](https://raw.githubusercontent.com/Molkobain/itop-handy-framework/develop/docs/mhf-tooltip-light-01-before.png)
-![Light tooltip after](https://raw.githubusercontent.com/Molkobain/itop-handy-framework/develop/docs/mhf-tooltip-light-01-after.png)
+![Light tooltip before](docs/mhf-tooltip-light-01-before.png)
+![Light tooltip after](docs/mhf-tooltip-light-01-after.png)
 
 #### Toggle buttons
 Display checkboxes as nice toggle buttons in forms by using `UIHelper::MakeToggleButton()`.
@@ -46,12 +46,12 @@ Downloading it directly from the *Clone or download* will get you the version un
 
 ## Installation
 * Unzip the extension
-* Copy the ``dist/molkobain-handy-framework`` folder under ``<PATH_TO_ITOP>/extensions`` folder of your iTop
+* Copy the ``molkobain-handy-framework`` folder under ``<PATH_TO_ITOP>/extensions`` folder of your iTop
 * Run iTop setup & select extension *Molkobain's handy framework*
 
 *Your folders should look like this*
 
-![Extensions folder](https://raw.githubusercontent.com/Molkobain/itop-handy-framework/develop/docs/mhf-install.png)
+![Extensions folder](docs/mhf-install.png)
 
 ## Configuration
 No configuration needed.
