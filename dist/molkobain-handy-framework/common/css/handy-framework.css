@@ -123,9 +123,9 @@
   transform: rotateZ(90deg);
 }
 .mhf-panel.mhf-collapsed .mhf-p-body {
-  margin-top: -48px;
-  min-height: 48px !important;
-  max-height: 48px !important;
+  margin-top: -50px;
+  min-height: 50px !important;
+  max-height: 50px !important;
 }
 .mhf-panel.mhf-collapsed .mhf-p-body > * {
   display: none;
