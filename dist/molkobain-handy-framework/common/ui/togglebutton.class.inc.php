@@ -216,12 +216,12 @@ class ToggleButton
 		$sOnChangeAtt = (!empty($this->sJSOnChangeCallback)) ? 'onchange="javascript: ' . htmlspecialchars($this->sJSOnChangeCallback) . '"' : '';
 
 		$sHtml =
-			<<<EOF
+			<<<HTML
 <span class="mhf-toggle-button">
 	<input class="mhf-tb-input mhf-tb-flat" id="{$this->sInputId}" name="{$this->sInputName}" type="checkbox" {$sOnChangeAtt} {$sInputChecked} {$sInputDisabled} />
 	<label class="mhf-tb-button" {$sOffTagAtt} {$sOnTagAtt} for="{$this->sInputId}">
 </span>
-EOF;
+HTML;
 
 		return $sHtml;
 	}
