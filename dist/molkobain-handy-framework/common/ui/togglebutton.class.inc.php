@@ -217,8 +217,8 @@ class ToggleButton
 
 		$sHtml =
 			<<<HTML
-<span class="mhf-toggle-button">
-	<input class="mhf-tb-input mhf-tb-flat" id="{$this->sInputId}" name="{$this->sInputName}" type="checkbox" {$sOnChangeAtt} {$sInputChecked} {$sInputDisabled} />
+<span class="mhf-toggle-button mhf-tb-flat">
+	<input class="mhf-tb-input" id="{$this->sInputId}" name="{$this->sInputName}" type="checkbox" {$sOnChangeAtt} {$sInputChecked} {$sInputDisabled} />
 	<label class="mhf-tb-button" {$sOffTagAtt} {$sOnTagAtt} for="{$this->sInputId}">
 </span>
 HTML;
