@@ -34,7 +34,12 @@ Display checkboxes as nice toggle buttons in forms by using `UIHelper::MakeToggl
 
 #### Loading overlay
 Use the `.mhf-loader` class to have a nice overlay when you need to block some parts of the UI.
-Toggle `.mhf-hide` class on it to hide / show it. 
+Toggle `.mhf-hide` class on it to hide / show it.
+
+### Code helpers
+#### String manipulations
+`StringHelper` class to simplify some string manipulations:
+* `StringHelper::ToCamelCase($sInput)` transforms a snake case string into a camel case string (eg. `"some_string" => "SomeString"`) 
 
 ## Compatibility
 Compatible with iTop 2.4+
