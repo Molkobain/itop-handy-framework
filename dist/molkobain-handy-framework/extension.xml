@@ -5,9 +5,9 @@
 	<author><![CDATA[Guillaume Lajarige]]></author>
 	<label><![CDATA[Molkobain's handy framework]]></label>
 	<description><![CDATA[A bunch of Core & UI helpers to be used by other extensions]]></description>
-	<version>1.2.4</version>
-	<release_date>2019-07-02</release_date>
-	<version_description><![CDATA[Fix panel body content being below other elements of the body when dragged]]></version_description>
+	<version>1.3.0</version>
+	<release_date>2019-12-31</release_date>
+	<version_description><![CDATA[Add compatibility with iTop 2.7+]]></version_description>
 	<itop_version_min>2.4.0</itop_version_min>
 	<status>stable</status>
 	<mandatory>false</mandatory>
