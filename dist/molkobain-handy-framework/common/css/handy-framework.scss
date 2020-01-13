@@ -273,3 +273,113 @@
 	}
 }
 
+/* Buttons */
+.mhf-button{
+	padding: 0.35rem 0.5rem;
+	border: 1px solid transparent;
+	border-radius: 2px;
+	cursor: pointer;
+	transition-property: background-color;
+	transition-duration: 0.1s;
+	transition-timing-function: linear;
+
+	&.mhf-button-simple{
+		min-width: 2.5rem;
+		font-weight: bold;
+		background-color: $button-default-main-color;
+		color: $button-default-comp-color;
+		border-color: $button-default-main-color;
+
+		&.mhf-button-primary{
+			background-color: $button-primary-main-color;
+			color: $button-primary-comp-color;
+			border-color: $button-primary-main-color;
+
+			&:hover{
+				background-color: darken($button-primary-main-color, 5%);
+			}
+			&:active{
+				background-color: darken($button-primary-main-color, 10%);
+			}
+		}
+
+		&:hover{
+			background-color: darken($button-default-main-color, 5%);
+		}
+		&:active{
+			background-color: darken($button-default-main-color, 10%);
+		}
+	}
+	&.mhf-button-outline{
+		font-weight: bold;
+		background-color: $button-default-comp-color;
+		color: $button-default-main-color;
+		border-color: $button-default-main-color;
+
+		&.mhf-button-primary{
+			background-color: $button-primary-comp-color;
+			color: $button-primary-main-color;
+			border-color: $button-primary-main-color;
+
+			&:hover{
+				background-color: darken($button-primary-comp-color, 5%);
+			}
+			&:active{
+				background-color: darken($button-primary-comp-color, 10%);
+			}
+		}
+		&.mhf-button-hyperlink{
+			background-color: $button-hyperlink-comp-color;
+			color: $button-hyperlink-main-color;
+			border-color: $button-hyperlink-main-color;
+
+			&:hover{
+				background-color: darken($button-hyperlink-comp-color, 5%);
+			}
+			&:active{
+				background-color: darken($button-hyperlink-comp-color, 10%);
+			}
+		}
+
+		&:hover{
+			background-color: darken($button-default-comp-color, 5%);
+		}
+		&:active{
+			background-color: darken($button-default-comp-color, 10%);
+		}
+	}
+	&.mhf-button-text{
+		font-weight: bold;
+		background-color: transparent;
+		color: $button-default-main-color;
+		border-color: transparent;
+
+		&.mhf-button-primary{
+			color: $button-primary-main-color;
+
+			&:hover{
+				color: darken($button-primary-main-color, 5%);
+			}
+			&:active{
+				color: darken($button-primary-main-color, 10%);
+			}
+		}
+		&.mhf-button-hyperlink{
+			color: $button-hyperlink-main-color;
+
+			&:hover{
+				color: darken($button-hyperlink-main-color, 5%);
+			}
+			&:active{
+				color: darken($button-hyperlink-main-color, 10%);
+			}
+		}
+
+		&:hover{
+			color: darken($button-default-main-color, 5%);
+		}
+		&:active{
+			color: darken($button-default-main-color, 10%);
+		}
+	}
+}

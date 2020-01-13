@@ -20,17 +20,26 @@ $box-shadow-stronger: 0 19px 38px rgba(0,0,0,0.30), 0 15px 12px rgba(0,0,0,0.22)
 $box-shadow-transition: all 0.3s cubic-bezier(.25,.8,.25,1) !default;
 
 /* Panel */
-$panel-bg-color: #ffffff;
-$panel-empty-hint-color: #777;
+$panel-color: #444 !default;
+$panel-bg-color: #ffffff !default;
+$panel-empty-hint-color: #777 !default;
 //noinspection SassScssResolvedByNameOnly
-$panel-collapse-icon-color: $brand-primary;
-$panel-collapsed-height: 50px;
+$panel-collapse-icon-color: $brand-primary !default;
+$panel-collapsed-height: 50px !default;
 
 /* Toggle buttons */
-$toggle-button-off-bg-color: #eaeaea;
+$toggle-button-off-bg-color: #eaeaea !default;
 //noinspection SassScssResolvedByNameOnly
-$toggle-button-on-bg-color: $brand-primary;
-$toggle-button-switch-bg-color: #ffffff;
+$toggle-button-on-bg-color: $brand-primary !default;
+$toggle-button-switch-bg-color: #ffffff !default;
+
+/* Buttons */
+$button-default-main-color: #2D3748 !default;
+$button-default-comp-color: white !default;
+$button-primary-main-color: $brand-primary !default;
+$button-primary-comp-color: white !default;
+$button-hyperlink-main-color: #1C94C4 !default;
+$button-hyperlink-comp-color: white !default;
 
 /* Can't put a global CSS class to reset stuff as classes will be used here and there by extensions, so we use this injection */
 %mhf-global-settings{
