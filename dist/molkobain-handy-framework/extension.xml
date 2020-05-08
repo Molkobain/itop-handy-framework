@@ -5,9 +5,9 @@
 	<author><![CDATA[Guillaume Lajarige]]></author>
 	<label><![CDATA[Molkobain's handy framework]]></label>
 	<description><![CDATA[A bunch of Core & UI helpers to be used by other extensions]]></description>
-	<version>1.5.0</version>
+	<version>1.5.1</version>
 	<release_date>2020-05-08</release_date>
-	<version_description><![CDATA[Refactor code to match new iTop extension convention]]></version_description>
+	<version_description><![CDATA[Fix FQCN in ConfigHelper]]></version_description>
 	<itop_version_min>2.4.0</itop_version_min>
 	<status>stable</status>
 	<mandatory>false</mandatory>

@@ -21,7 +21,7 @@ use utils;
 class ConfigHelper
 {
     const MODULE_NAME = 'molkobain-handy-framework';
-    const SETTING_CONST_FQCN = 'Molkobain\\iTop\\Extension\\HandyFramework\\Common\\Helper\\ConfigHelper';
+    const SETTING_CONST_FQCN = 'Molkobain\\iTop\\Extension\\HandyFramework\\Helper\\ConfigHelper';
 
     const DEFAULT_SETTING_ENABLED = true;
 
