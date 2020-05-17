@@ -11,7 +11,276 @@
 
 /* Variables */
 /* |- Helpers */
-/* |-- Box shadows */
+/* |  |- Colors */
+/* |  |  |- White */
+$color-transparent: rgba(255,255,255,0.000) !default;
+$color-white-100: rgba(255,255,255,1) !default;
+$color-white-200: rgba(242,242,242,1) !default;
+/* |  |  |- Grey */
+$color-grey-50: rgba(252,252,253,1) !default;
+$color-grey-100: rgba(248,249,250,1) !default;
+$color-grey-200: rgba(225,231,236,1) !default;
+$color-grey-300: rgba(213,221,229,1) !default;
+$color-grey-400: rgba(204,212,219,1) !default;
+$color-grey-500: rgba(174,190,205,1) !default;
+$color-grey-600: rgba(146,159,177,1) !default;
+$color-grey-700: rgba(110,122,138,1) !default;
+$color-grey-800: rgba(64,75,90,1) !default;
+$color-grey-900: rgba(33,41,52,1) !default;
+/* |  |  |- Red */
+$color-red-100: rgba(252,232,232,1) !default;
+$color-red-200: rgba(254,215,215,1) !default;
+$color-red-300: rgba(254,178,178,1) !default;
+$color-red-400: rgba(252,129,129,1) !default;
+$color-red-500: rgba(245,101,101,1) !default;
+$color-red-600: rgba(229,62,62,1) !default;
+$color-red-700: rgba(197,48,48,1) !default;
+$color-red-800: rgba(155,44,44,1) !default;
+$color-red-900: rgba(116,42,42,1) !default;
+/* |  |  |- Orange */
+$color-orange-100: rgba(255,250,240,1) !default;
+$color-orange-200: rgba(254,235,200,1) !default;
+$color-orange-300: rgba(251,211,141,1) !default;
+$color-orange-400: rgba(246,173,85,1) !default;
+$color-orange-500: rgba(234,125,30,1) !default;
+$color-orange-600: rgba(221,107,32,1) !default;
+$color-orange-700: rgba(192,86,33,1) !default;
+$color-orange-800: rgba(156,66,33,1) !default;
+$color-orange-900: rgba(123,52,30,1) !default;
+/* |  |  |- Green */
+$color-green-100: rgba(220,237,200,1) !default;
+$color-green-200: rgba(197,225,165,1) !default;
+$color-green-300: rgba(174,213,129,1) !default;
+$color-green-400: rgba(156,204,101,1) !default;
+$color-green-500: rgba(139,195,74,1) !default;
+$color-green-600: rgba(124,179,66,1) !default;
+$color-green-700: rgba(104,159,56,1) !default;
+$color-green-800: rgba(85,139,47,1) !default;
+$color-green-900: rgba(51,105,30,1) !default;
+/* |  |  |- Blue grey */
+$color-blue-grey-100: rgba(207,216,220,1) !default;
+$color-blue-grey-200: rgba(176,190,197,1) !default;
+$color-blue-grey-300: rgba(144,164,174,1) !default;
+$color-blue-grey-400: rgba(120,144,156,1) !default;
+$color-blue-grey-500: rgba(96,125,139,1) !default;
+$color-blue-grey-600: rgba(84,110,122,1) !default;
+$color-blue-grey-700: rgba(69,90,100,1) !default;
+$color-blue-grey-800: rgba(55,71,79,1) !default;
+$color-blue-grey-900: rgba(38,50,56,1) !default;
+/* |  |  |- Blue */
+$color-blue-100: rgba(235,248,255,1) !default;
+$color-blue-200: rgba(190,227,248,1) !default;
+$color-blue-300: rgba(144,205,244,1) !default;
+$color-blue-400: rgba(99,179,237,1) !default;
+$color-blue-500: rgba(66,153,225,1) !default;
+$color-blue-600: rgba(49,130,206,1) !default;
+$color-blue-700: rgba(43,108,176,1) !default;
+$color-blue-800: rgba(44,82,130,1) !default;
+$color-blue-900: rgba(42,67,101,1) !default;
+/* |  |  |- Cyan */
+$color-cyan-100: rgba(201,238,242,1) !default;
+$color-cyan-200: rgba(128,222,234,1) !default;
+$color-cyan-300: rgba(77,208,225,1) !default;
+$color-cyan-400: rgba(38,198,218,1) !default;
+$color-cyan-500: rgba(0,188,212,1) !default;
+$color-cyan-600: rgba(0,172,193,1) !default;
+$color-cyan-700: rgba(0,151,167,1) !default;
+$color-cyan-800: rgba(0,131,143,1) !default;
+$color-cyan-900: rgba(0,96,100,1) !default;
+/* |  |  |- Purple */
+$color-purple-100: #FAF5FF !default;
+$color-purple-200: #E9D8FD !default;
+$color-purple-300: #D6BCFA !default;
+$color-purple-400: #B794F4 !default;
+$color-purple-500: #9F7AEA !default;
+$color-purple-600: #805AD5 !default;
+$color-purple-700: #6B46C1 !default;
+$color-purple-800: #553C9A !default;
+$color-purple-900: #44337A !default;
+/* |  |- Fonts */
+/* |  |  |- Standard font, regualr weight */
+@mixin font-ops-med-10-px {
+	font-size:10px;
+	font-family: "Open Sans";
+	font-weight: 500;
+}
+@mixin font-ops-med-12-px {
+	font-size:12px;
+	font-family: "Open Sans";
+	font-weight: 500;
+}
+@mixin font-ops-med-14-px {
+	font-size:14px;
+	font-family: "Open Sans";
+	font-weight: 500;
+}
+@mixin font-ops-med-16-px {
+	font-size:16px;
+	font-family: "Open Sans";
+	font-weight: 500;
+}
+@mixin font-ops-med-18-px {
+	font-size:18px;
+	font-family: "Open Sans";
+	font-weight: 500;
+}
+@mixin font-ops-med-20-px {
+	font-size:20px;
+	font-family: "Open Sans";
+	font-weight: 500;
+}
+@mixin font-ops-med-22-px {
+	font-size:22px;
+	font-family: "Open Sans";
+	font-weight: 500;
+}
+@mixin font-ops-med-24-px {
+	font-size:24px;
+	font-family: "Open Sans";
+	font-weight: 500;
+}
+@mixin font-ops-med-30-px {
+	font-size:30px;
+	font-family: "Open Sans";
+	font-weight: 500;
+}
+@mixin font-ops-med-36-px {
+	font-size:36px;
+	font-family: "Open Sans";
+	font-weight: 500;
+}
+@mixin font-ops-med-48-px {
+	font-size:48px;
+	font-family: "Open Sans";
+	font-weight: 500;
+}
+/* |  |  |- Standard font, bold weight */
+@mixin font-ops-bol-10-px {
+	font-size:10px;
+	font-family: "Open Sans";
+	font-weight: bold;
+}
+@mixin font-ops-bol-12-px {
+	font-size:12px;
+	font-family: "Open Sans";
+	font-weight: bold;
+}
+@mixin font-ops-bol-14-px {
+	font-size:14px;
+	font-family: "Open Sans";
+	font-weight: bold;
+}
+@mixin font-ops-bol-16-px {
+	font-size:16px;
+	font-family: "Open Sans";
+	font-weight: bold;
+}
+@mixin font-ops-bol-18-px {
+	font-size:18px;
+	font-family: "Open Sans";
+	font-weight: bold;
+}
+@mixin font-ops-bol-20-px {
+	font-size:20px;
+	font-family: "Open Sans";
+	font-weight: bold;
+}
+@mixin font-ops-bol-22-px {
+	font-size:22px;
+	font-family: "Open Sans";
+	font-weight: bold;
+}
+@mixin font-ops-bol-24-px {
+	font-size:24px;
+	font-family: "Open Sans";
+	font-weight: bold;
+}
+@mixin font-ops-bol-30-px {
+	font-size:30px;
+	font-family: "Open Sans";
+	font-weight: bold;
+}
+@mixin font-ops-bol-36-px {
+	font-size:36px;
+	font-family: "Open Sans";
+	font-weight: bold;
+}
+@mixin font-ops-bol-48-px {
+	font-size:48px;
+	font-family: "Open Sans";
+	font-weight: bold;
+}
+/* |  |  |- Standard font, normal weight, italic style */
+@mixin font-ops-ita-10-px {
+	font-size:10px;
+	font-family: "Open Sans";
+	font-style: italic;
+}
+@mixin font-ops-ita-12-px {
+	font-size:12px;
+	font-family: "Open Sans";
+	font-style: italic;
+}
+@mixin font-ops-ita-14-px {
+	font-size:14px;
+	font-family: "Open Sans";
+	font-style: italic;
+}
+@mixin font-ops-ita-16-px {
+	font-size:16px;
+	font-family: "Open Sans";
+	font-style: italic;
+}
+@mixin font-ops-ita-18-px {
+	font-size:18px;
+	font-family: "Open Sans";
+	font-style: italic;
+}
+@mixin font-ops-ita-20-px {
+	font-size:20px;
+	font-family: "Open Sans";
+	font-style: italic;
+}
+@mixin font-ops-ita-22-px {
+	font-size:22px;
+	font-family: "Open Sans";
+	font-style: italic;
+}
+@mixin font-ops-ita-24-px {
+	font-size:24px;
+	font-family: "Open Sans";
+	font-style: italic;
+}
+@mixin font-ops-ita-30-px {
+	font-size:30px;
+	font-family: "Open Sans";
+	font-style: italic;
+}
+@mixin font-ops-ita-36-px {
+	font-size:36px;
+	font-family: "Open Sans";
+	font-style: italic;
+}
+@mixin font-ops-ita-48-px {
+	font-size:48px;
+	font-family: "Open Sans";
+	font-style: italic;
+}
+/* |  |- Border radius */
+@mixin border-radius-300{
+	border-radius: 3px;
+}
+@mixin border-radius-400{
+	border-radius: 4px;
+}
+@mixin border-radius-500{
+	border-radius: 5px;
+}
+@mixin border-radius-full{
+	border-radius: 100%;
+}
+/* |  |- Box shadows */
+/* |     Note: Use mixins instead of variables */
 $box-shadow-lightest: 0 1px 1px rgba(0, 0, 0, 0.15) !default;
 $box-shadow-lighter: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24) !default;
 $box-shadow-light: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23) !default;
@@ -19,6 +288,38 @@ $box-shadow-regular: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23) !d
 $box-shadow-strong: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22) !default;
 $box-shadow-stronger: 0 19px 38px rgba(0,0,0,0.30), 0 15px 12px rgba(0,0,0,0.22) !default;
 $box-shadow-transition: all 0.3s cubic-bezier(.25,.8,.25,1) !default;
+@mixin box-shadow-lightest{
+	box-shadow: $box-shadow-lightest;
+}
+@mixin box-shadow-lighter{
+	box-shadow: $box-shadow-lighter;
+}
+@mixin box-shadow-light{
+	box-shadow: $box-shadow-light;
+}
+@mixin box-shadow-regular{
+	box-shadow: $box-shadow-regular;
+}
+@mixin box-shadow-strong{
+	box-shadow: $box-shadow-strong;
+}
+@mixin box-shadow-stronger{
+	box-shadow: $box-shadow-stronger;
+}
+/* |  |- Positioning */
+@mixin display-flex-fully-centered {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+@mixin display-flex-horizontally-centered {
+	display: flex;
+	justify-content: center;
+}
+@mixin display-flex-vertically-centered {
+	display: flex;
+	align-items: center;
+}
 
 /* Panel */
 $panel-color: #444 !default;
@@ -35,12 +336,12 @@ $toggle-button-on-bg-color: $brand-primary !default;
 $toggle-button-switch-bg-color: #ffffff !default;
 
 /* Buttons */
-$button-default-main-color: #2D3748 !default;
-$button-default-comp-color: white !default;
+$button-default-main-color: $color-blue-grey-900 !default;
+$button-default-comp-color: $color-white-100 !default;
 $button-primary-main-color: $brand-primary !default;
-$button-primary-comp-color: white !default;
+$button-primary-comp-color: $color-white-100 !default;
 $button-hyperlink-main-color: #1C94C4 !default;
-$button-hyperlink-comp-color: white !default;
+$button-hyperlink-comp-color: $color-white-100 !default;
 
 /* Can't put a global CSS class to reset stuff as classes will be used here and there by extensions, so we use this injection */
 %mhf-global-settings{

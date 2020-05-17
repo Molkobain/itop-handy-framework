@@ -276,7 +276,7 @@
 .mhf-button{
 	padding: 0.35rem 0.5rem;
 	border: 1px solid transparent;
-	border-radius: 2px;
+	@include border-radius-300;
 	cursor: pointer;
 	transition-property: background-color;
 	transition-duration: 0.1s;
@@ -349,9 +349,16 @@
 	}
 	&.mhf-button-text{
 		font-weight: bold;
-		background-color: transparent;
 		color: $button-default-main-color;
+		background-color: transparent;
 		border-color: transparent;
+
+		&:hover{
+			color: darken($button-default-main-color, 5%);
+		}
+		&:active{
+			color: darken($button-default-main-color, 10%);
+		}
 
 		&.mhf-button-primary{
 			color: $button-primary-main-color;
@@ -372,13 +379,6 @@
 			&:active{
 				color: darken($button-hyperlink-main-color, 10%);
 			}
-		}
-
-		&:hover{
-			color: darken($button-default-main-color, 5%);
-		}
-		&:active{
-			color: darken($button-default-main-color, 10%);
 		}
 	}
 }
