@@ -40,6 +40,8 @@ Display checkboxes as nice toggle buttons in forms by using `UIHelper::MakeToggl
 #### Button designs
 Some CSS clases to put predefined designs on buttons. Check the `.mhf-button` classes.
 
+![Buttons](docs/mhf-button-all.png)
+
 #### Loading overlay
 Use the `.mhf-loader` class to have a nice overlay when you need to block some parts of the UI.
 Toggle `.mhf-hide` class on it to hide / show it.
