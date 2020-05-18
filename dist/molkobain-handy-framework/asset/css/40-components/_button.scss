@@ -21,9 +21,11 @@ $button-themes: (
 			border-color: $color-blue-grey-600,
 			hover: (
 				background-color: $color-blue-grey-800,
+				border-color: $color-blue-grey-800,
 			),
 			active: (
 				background-color: $color-blue-grey-800,
+				border-color: $color-blue-grey-800,
 			)
 		),
 		primary: (
@@ -32,9 +34,11 @@ $button-themes: (
 			border-color: $brand-primary,
 			hover: (
 				background-color: darken($brand-primary, 5%),
+				border-color: darken($brand-primary, 5%),
 			),
 			active: (
 				background-color: darken($brand-primary, 8%),
+				border-color: darken($brand-primary, 8%),
 			)
 		),
 		success: (
@@ -43,9 +47,11 @@ $button-themes: (
 			border-color: $color-green-700,
 			hover: (
 				background-color: $color-green-800,
+				border-color: $color-green-800,
 			),
 			active: (
 				background-color: $color-green-800,
+				border-color: $color-green-800,
 			)
 		),
 		warning: (
@@ -54,9 +60,11 @@ $button-themes: (
 			border-color: $color-orange-400,
 			hover: (
 				background-color: $color-orange-600,
+				border-color: $color-orange-600,
 			),
 			active: (
 				background-color: $color-orange-600,
+				border-color: $color-orange-600,
 			)
 		),
 		danger: (
@@ -65,10 +73,25 @@ $button-themes: (
 			border-color: $color-red-700,
 			hover: (
 				background-color: $color-red-800,
+				border-color: $color-red-800,
 			),
 			active: (
 				background-color: $color-red-800,
+				border-color: $color-red-800,
 			)
+		),
+		disabled: (
+			color: $color-grey-600,
+			background-color: $color-grey-200,
+			border-color: $color-grey-200,
+			active: (
+				background-color: $color-grey-200,
+				border-color: $color-grey-200,
+			),
+			hover: (
+				background-color: $color-grey-200,
+				border-color: $color-grey-200,
+			),
 		),
 	),
 	outline: (
@@ -102,6 +125,17 @@ $button-themes: (
 		hyperlink: (
 			color: $color-blue-500,
 			border-color: $color-blue-500,
+		),
+		disabled: (
+			color: $color-grey-600,
+			border-color: $color-grey-600,
+			background-color: $color-grey-200,
+			hover: (
+				background-color: $color-grey-200,
+			),
+			active: (
+				background-color: $color-grey-200,
+			)
 		),
 	),
 	text: (
@@ -172,7 +206,20 @@ $button-themes: (
 			active: (
 				color: $color-blue-800,
 			),
-		)
+		),
+		disabled: (
+			color: $color-grey-600,
+			hover: (
+				color: $color-grey-600,
+				background-color: $color-transparent,
+				border-color: $color-transparent,
+			),
+			active: (
+				color: $color-grey-600,
+				background-color: $color-transparent,
+				border-color: $color-transparent,
+			),
+		),
 	)
 );
 
@@ -199,6 +246,9 @@ $button-themes: (
 	}
 	&.mhf-button-text {
 		font-weight: bold;
+	}
+	&.mhf-button-disabled{
+		cursor: not-allowed;
 	}
 
 	@each $type, $styles in $button-themes {

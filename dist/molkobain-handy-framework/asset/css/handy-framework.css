@@ -42,6 +42,10 @@
  *
  * Use of this extension is bound by the license you purchased. A license grants you a non-exclusive and non-transferable right to use and incorporate the item in your personal or commercial projects. There are several licenses available (see https://www.molkobain.com/usage-licenses/ for more informations)
  */
+/**************************************************************************/
+/* Colors come from the great TailWind website                            */
+/* https://tailwindcss.com/docs/customizing-colors/#default-color-palette */
+/**************************************************************************/
 /* White */
 /* Grey */
 /* Red */
@@ -162,6 +166,9 @@
 .mhf-button.mhf-button-text {
   font-weight: bold;
 }
+.mhf-button.mhf-button-disabled {
+  cursor: not-allowed;
+}
 .mhf-button.mhf-button-simple {
   /* Default style is put in the base button type selector... */
   color: white;
@@ -170,9 +177,11 @@
 }
 .mhf-button.mhf-button-simple:hover {
   background-color: #37474f;
+  border-color: #37474f;
 }
 .mhf-button.mhf-button-simple:active {
   background-color: #37474f;
+  border-color: #37474f;
 }
 .mhf-button.mhf-button-simple.mhf-button-primary {
   /* .. only specific styles have a dedicated class selector */
@@ -182,9 +191,11 @@
 }
 .mhf-button.mhf-button-simple.mhf-button-primary:hover {
   background-color: #da7014;
+  border-color: #da7014;
 }
 .mhf-button.mhf-button-simple.mhf-button-primary:active {
   background-color: #cc6913;
+  border-color: #cc6913;
 }
 .mhf-button.mhf-button-simple.mhf-button-success {
   /* .. only specific styles have a dedicated class selector */
@@ -194,9 +205,11 @@
 }
 .mhf-button.mhf-button-simple.mhf-button-success:hover {
   background-color: #558b2f;
+  border-color: #558b2f;
 }
 .mhf-button.mhf-button-simple.mhf-button-success:active {
   background-color: #558b2f;
+  border-color: #558b2f;
 }
 .mhf-button.mhf-button-simple.mhf-button-warning {
   /* .. only specific styles have a dedicated class selector */
@@ -206,9 +219,11 @@
 }
 .mhf-button.mhf-button-simple.mhf-button-warning:hover {
   background-color: #dd6b20;
+  border-color: #dd6b20;
 }
 .mhf-button.mhf-button-simple.mhf-button-warning:active {
   background-color: #dd6b20;
+  border-color: #dd6b20;
 }
 .mhf-button.mhf-button-simple.mhf-button-danger {
   /* .. only specific styles have a dedicated class selector */
@@ -218,9 +233,25 @@
 }
 .mhf-button.mhf-button-simple.mhf-button-danger:hover {
   background-color: #9b2c2c;
+  border-color: #9b2c2c;
 }
 .mhf-button.mhf-button-simple.mhf-button-danger:active {
   background-color: #9b2c2c;
+  border-color: #9b2c2c;
+}
+.mhf-button.mhf-button-simple.mhf-button-disabled {
+  /* .. only specific styles have a dedicated class selector */
+  color: #929fb1;
+  background-color: #e1e7ec;
+  border-color: #e1e7ec;
+}
+.mhf-button.mhf-button-simple.mhf-button-disabled:active {
+  background-color: #e1e7ec;
+  border-color: #e1e7ec;
+}
+.mhf-button.mhf-button-simple.mhf-button-disabled:hover {
+  background-color: #e1e7ec;
+  border-color: #e1e7ec;
 }
 .mhf-button.mhf-button-outline {
   /* Default style is put in the base button type selector... */
@@ -258,6 +289,18 @@
   /* .. only specific styles have a dedicated class selector */
   color: #4299e1;
   border-color: #4299e1;
+}
+.mhf-button.mhf-button-outline.mhf-button-disabled {
+  /* .. only specific styles have a dedicated class selector */
+  color: #929fb1;
+  border-color: #929fb1;
+  background-color: #e1e7ec;
+}
+.mhf-button.mhf-button-outline.mhf-button-disabled:hover {
+  background-color: #e1e7ec;
+}
+.mhf-button.mhf-button-outline.mhf-button-disabled:active {
+  background-color: #e1e7ec;
 }
 .mhf-button.mhf-button-text {
   /* Default style is put in the base button type selector... */
@@ -332,6 +375,20 @@
 }
 .mhf-button.mhf-button-text.mhf-button-hyperlink:active {
   color: #2c5282;
+}
+.mhf-button.mhf-button-text.mhf-button-disabled {
+  /* .. only specific styles have a dedicated class selector */
+  color: #929fb1;
+}
+.mhf-button.mhf-button-text.mhf-button-disabled:hover {
+  color: #929fb1;
+  background-color: rgba(255, 255, 255, 0);
+  border-color: rgba(255, 255, 255, 0);
+}
+.mhf-button.mhf-button-text.mhf-button-disabled:active {
+  color: #929fb1;
+  background-color: rgba(255, 255, 255, 0);
+  border-color: rgba(255, 255, 255, 0);
 }
 /*!
  * Copyright (c) 2015 - 2020 Molkobain.
