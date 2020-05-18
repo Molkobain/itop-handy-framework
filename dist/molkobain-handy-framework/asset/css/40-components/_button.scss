@@ -9,12 +9,9 @@
 /* Buttons */
 
 /* Variables */
-$button-default-main-color: $color-blue-grey-800 !default;
-$button-default-comp-color: $color-white-100 !default;
-$button-primary-main-color: $brand-primary !default;
-$button-primary-comp-color: $color-white-100 !default;
-$button-hyperlink-main-color: #1C94C4 !default;
-$button-hyperlink-comp-color: $color-white-100 !default;
+$button-padding: (
+	medium: 0.4rem 0.8rem,
+);
 
 $button-themes: (
 	simple: (
@@ -122,7 +119,7 @@ $button-themes: (
 			)
 		),
 		primary: (
-			color: $button-primary-main-color,
+			color: $brand-primary,
 			hover: (
 				color: darken($brand-primary, 5%),
 			),
@@ -182,7 +179,7 @@ $button-themes: (
 /* Classes */
 .mhf-button {
 	@extend %mhf-reset-box-sizing;
-	padding: 0.4rem 0.8rem;
+	padding: map_get($button-padding, medium);
 	border: 1px solid transparent;
 	@include border-radius-300;
 	cursor: pointer;
