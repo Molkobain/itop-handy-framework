@@ -11,3 +11,8 @@
 /*****************************************************/
 
 @import '../env-production/molkobain-handy-framework/asset/css/toolbox.scss';
+
+/* Need to import some of the components also as their variables were in ./variables.scss before... */
+@import '../env-production/molkobain-handy-framework/asset/css/40-components/button';
+@import '../env-production/molkobain-handy-framework/asset/css/40-components/panel';
+@import '../env-production/molkobain-handy-framework/asset/css/40-components/toggle-button';
