@@ -1,4 +1,3 @@
-@import '../datamodels/2.x/itop-portal-base/portal/public/css/variables.scss';
 /*!
  * Copyright (c) 2015 - 2019 Molkobain.
  *
@@ -13,23 +12,105 @@
  *
  * Use of this extension is bound by the license you purchased. A license grants you a non-exclusive and non-transferable right to use and incorporate the item in your personal or commercial projects. There are several licenses available (see https://www.molkobain.com/usage-licenses/ for more informations)
  */
-/* Variables */
-/* |- Helpers */
-/* |-- Box shadows */
-/* Panel */
-/* Toggle buttons */
-/* Buttons */
+/********************************************************************************/
+/* The toolbox is meant to be used by other SCSS files to ease SCSS development */
+/********************************************************************************/
+/* Variables from iTop */
+@import '../datamodels/2.x/itop-portal-base/portal/web/css/variables.scss';
+/*!
+ * Copyright (C) 2013-2020 Combodo SARL
+ *
+ * This file is part of iTop.
+ *
+ * iTop is free software; you can redistribute it and/or modify
+ * it under the terms of the GNU Affero General Public License as published by
+ * the Free Software Foundation, either version 3 of the License, or
+ * (at your option) any later version.
+ *
+ * iTop is distributed in the hope that it will be useful,
+ * but WITHOUT ANY WARRANTY; without even the implied warranty of
+ * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+ * GNU Affero General Public License for more details.
+ *
+ * You should have received a copy of the GNU Affero General Public License
+ */
+/* Files from the extension */
+/*!
+ * Copyright (c) 2015 - 2020 Molkobain.
+ *
+ * This file is part of licensed extension.
+ *
+ * Use of this extension is bound by the license you purchased. A license grants you a non-exclusive and non-transferable right to use and incorporate the item in your personal or commercial projects. There are several licenses available (see https://www.molkobain.com/usage-licenses/ for more informations)
+ */
+/* White */
+/* Grey */
+/* Red */
+/* Orange */
+/* Green */
+/* Blue grey */
+/* Blue */
+/* Cyan */
+/* Purple */
+/*!
+ * Copyright (c) 2015 - 2020 Molkobain.
+ *
+ * This file is part of licensed extension.
+ *
+ * Use of this extension is bound by the license you purchased. A license grants you a non-exclusive and non-transferable right to use and incorporate the item in your personal or commercial projects. There are several licenses available (see https://www.molkobain.com/usage-licenses/ for more informations)
+ */
+/* Border radius */
+/*!
+ * Copyright (c) 2015 - 2020 Molkobain.
+ *
+ * This file is part of licensed extension.
+ *
+ * Use of this extension is bound by the license you purchased. A license grants you a non-exclusive and non-transferable right to use and incorporate the item in your personal or commercial projects. There are several licenses available (see https://www.molkobain.com/usage-licenses/ for more informations)
+ */
+/* Box shadows */
+/* Note: Variables are deprecated and will be removed soon, use mixins instead */
+/*!
+ * Copyright (c) 2015 - 2020 Molkobain.
+ *
+ * This file is part of licensed extension.
+ *
+ * Use of this extension is bound by the license you purchased. A license grants you a non-exclusive and non-transferable right to use and incorporate the item in your personal or commercial projects. There are several licenses available (see https://www.molkobain.com/usage-licenses/ for more informations)
+ */
+/* Open Sans Medium */
+/* Open Sans Bold */
+/* Open Sans Italic */
+/*!
+ * Copyright (c) 2015 - 2020 Molkobain.
+ *
+ * This file is part of licensed extension.
+ *
+ * Use of this extension is bound by the license you purchased. A license grants you a non-exclusive and non-transferable right to use and incorporate the item in your personal or commercial projects. There are several licenses available (see https://www.molkobain.com/usage-licenses/ for more informations)
+ */
+/* Positioning */
+/*!
+ * Copyright (c) 2015 - 2020 Molkobain.
+ *
+ * This file is part of licensed extension.
+ *
+ * Use of this extension is bound by the license you purchased. A license grants you a non-exclusive and non-transferable right to use and incorporate the item in your personal or commercial projects. There are several licenses available (see https://www.molkobain.com/usage-licenses/ for more informations)
+ */
 /* Can't put a global CSS class to reset stuff as classes will be used here and there by extensions, so we use this injection */
-.mhf-templates, .mhf-panel, .mhf-tooltip, .mhf-toggle-button {
-  /* Reset for admin console mostly */
+/* Note: Reset for admin console mostly */
+.mhf-templates, .mhf-button, .mhf-loader, .mhf-panel, .mhf-toggle-button, .mhf-tooltip {
   box-sizing: border-box;
 }
-.mhf-templates *, .mhf-panel *, .mhf-tooltip *, .mhf-toggle-button * {
+.mhf-templates *, .mhf-button *, .mhf-loader *, .mhf-panel *, .mhf-toggle-button *, .mhf-tooltip * {
   box-sizing: border-box;
 }
-.mhf-templates *::before, .mhf-panel *::before, .mhf-tooltip *::before, .mhf-toggle-button *::before, .mhf-templates *::after, .mhf-panel *::after, .mhf-tooltip *::after, .mhf-toggle-button *::after {
+.mhf-templates *::before, .mhf-button *::before, .mhf-loader *::before, .mhf-panel *::before, .mhf-toggle-button *::before, .mhf-tooltip *::before, .mhf-templates *::after, .mhf-button *::after, .mhf-loader *::after, .mhf-panel *::after, .mhf-toggle-button *::after, .mhf-tooltip *::after {
   box-sizing: border-box;
 }
+/*!
+ * Copyright (c) 2015 - 2020 Molkobain.
+ *
+ * This file is part of licensed extension.
+ *
+ * Use of this extension is bound by the license you purchased. A license grants you a non-exclusive and non-transferable right to use and incorporate the item in your personal or commercial projects. There are several licenses available (see https://www.molkobain.com/usage-licenses/ for more informations)
+ */
 /* Helpers */
 .mhf-pull-left {
   float: left;
@@ -50,6 +131,215 @@
 .mhf-templates {
   display: none;
 }
+/*!
+ * Copyright (c) 2015 - 2020 Molkobain.
+ *
+ * This file is part of licensed extension.
+ *
+ * Use of this extension is bound by the license you purchased. A license grants you a non-exclusive and non-transferable right to use and incorporate the item in your personal or commercial projects. There are several licenses available (see https://www.molkobain.com/usage-licenses/ for more informations)
+ */
+/* Buttons */
+/* Variables */
+/* Classes */
+.mhf-button {
+  padding: 0.4rem 0.8rem;
+  border: 1px solid transparent;
+  border-radius: 3px;
+  cursor: pointer;
+  transition-property: color, background-color;
+  transition-duration: 0.1s;
+  transition-timing-function: linear;
+}
+.mhf-button:active {
+  outline: none;
+}
+.mhf-button.mhf-button-simple {
+  min-width: 2.5rem;
+}
+.mhf-button.mhf-button-outline {
+  font-weight: bold;
+}
+.mhf-button.mhf-button-text {
+  font-weight: bold;
+}
+.mhf-button.mhf-button-simple {
+  /* Default style is put in the base button type selector... */
+  color: white;
+  background-color: #546e7a;
+  border-color: #546e7a;
+}
+.mhf-button.mhf-button-simple:hover {
+  background-color: #37474f;
+}
+.mhf-button.mhf-button-simple:active {
+  background-color: #37474f;
+}
+.mhf-button.mhf-button-simple.mhf-button-primary {
+  /* .. only specific styles have a dedicated class selector */
+  color: white;
+  background-color: #EA7D1E;
+  border-color: #EA7D1E;
+}
+.mhf-button.mhf-button-simple.mhf-button-primary:hover {
+  background-color: #da7014;
+}
+.mhf-button.mhf-button-simple.mhf-button-primary:active {
+  background-color: #cc6913;
+}
+.mhf-button.mhf-button-simple.mhf-button-success {
+  /* .. only specific styles have a dedicated class selector */
+  color: white;
+  background-color: #689f38;
+  border-color: #689f38;
+}
+.mhf-button.mhf-button-simple.mhf-button-success:hover {
+  background-color: #558b2f;
+}
+.mhf-button.mhf-button-simple.mhf-button-success:active {
+  background-color: #558b2f;
+}
+.mhf-button.mhf-button-simple.mhf-button-warning {
+  /* .. only specific styles have a dedicated class selector */
+  color: white;
+  background-color: #f6ad55;
+  border-color: #f6ad55;
+}
+.mhf-button.mhf-button-simple.mhf-button-warning:hover {
+  background-color: #dd6b20;
+}
+.mhf-button.mhf-button-simple.mhf-button-warning:active {
+  background-color: #dd6b20;
+}
+.mhf-button.mhf-button-simple.mhf-button-danger {
+  /* .. only specific styles have a dedicated class selector */
+  color: white;
+  background-color: #c53030;
+  border-color: #c53030;
+}
+.mhf-button.mhf-button-simple.mhf-button-danger:hover {
+  background-color: #9b2c2c;
+}
+.mhf-button.mhf-button-simple.mhf-button-danger:active {
+  background-color: #9b2c2c;
+}
+.mhf-button.mhf-button-outline {
+  /* Default style is put in the base button type selector... */
+  background-color: white;
+  color: #37474f;
+  border-color: #37474f;
+}
+.mhf-button.mhf-button-outline:hover {
+  background-color: #f8f9fa;
+}
+.mhf-button.mhf-button-outline:active {
+  background-color: #eff1f4;
+}
+.mhf-button.mhf-button-outline.mhf-button-primary {
+  /* .. only specific styles have a dedicated class selector */
+  color: #EA7D1E;
+  border-color: #EA7D1E;
+}
+.mhf-button.mhf-button-outline.mhf-button-success {
+  /* .. only specific styles have a dedicated class selector */
+  color: #558b2f;
+  border-color: #558b2f;
+}
+.mhf-button.mhf-button-outline.mhf-button-warning {
+  /* .. only specific styles have a dedicated class selector */
+  color: #dd6b20;
+  border-color: #dd6b20;
+}
+.mhf-button.mhf-button-outline.mhf-button-danger {
+  /* .. only specific styles have a dedicated class selector */
+  color: #c53030;
+  border-color: #c53030;
+}
+.mhf-button.mhf-button-outline.mhf-button-hyperlink {
+  /* .. only specific styles have a dedicated class selector */
+  color: #4299e1;
+  border-color: #4299e1;
+}
+.mhf-button.mhf-button-text {
+  /* Default style is put in the base button type selector... */
+  color: #37474f;
+  background-color: rgba(255, 255, 255, 0);
+  border-color: rgba(255, 255, 255, 0);
+}
+.mhf-button.mhf-button-text:hover {
+  background-color: #f8f9fa;
+  border-color: #f8f9fa;
+}
+.mhf-button.mhf-button-text:active {
+  background-color: #eff1f4;
+  border-color: #eff1f4;
+}
+.mhf-button.mhf-button-text.mhf-button-primary {
+  /* .. only specific styles have a dedicated class selector */
+  color: #EA7D1E;
+}
+.mhf-button.mhf-button-text.mhf-button-primary:hover {
+  color: #da7014;
+}
+.mhf-button.mhf-button-text.mhf-button-primary:active {
+  color: #cc6913;
+}
+.mhf-button.mhf-button-text.mhf-button-success {
+  /* .. only specific styles have a dedicated class selector */
+  color: #33691e;
+}
+.mhf-button.mhf-button-text.mhf-button-success:hover {
+  background-color: #dcedc8;
+  border-color: #dcedc8;
+}
+.mhf-button.mhf-button-text.mhf-button-success:active {
+  background-color: #c5e1a5;
+  border-color: #c5e1a5;
+}
+.mhf-button.mhf-button-text.mhf-button-warning {
+  /* .. only specific styles have a dedicated class selector */
+  color: #dd6b20;
+}
+.mhf-button.mhf-button-text.mhf-button-warning:hover {
+  color: #212934;
+  background-color: #feebc8;
+  border-color: #feebc8;
+}
+.mhf-button.mhf-button-text.mhf-button-warning:active {
+  color: #212934;
+  background-color: #fbd38d;
+  border-color: #fbd38d;
+}
+.mhf-button.mhf-button-text.mhf-button-danger {
+  /* .. only specific styles have a dedicated class selector */
+  color: #c53030;
+}
+.mhf-button.mhf-button-text.mhf-button-danger:hover {
+  color: #742a2a;
+  background-color: #fce8e8;
+  border-color: #fce8e8;
+}
+.mhf-button.mhf-button-text.mhf-button-danger:active {
+  color: #742a2a;
+  background-color: #fed7d7;
+  border-color: #fed7d7;
+}
+.mhf-button.mhf-button-text.mhf-button-hyperlink {
+  /* .. only specific styles have a dedicated class selector */
+  color: #4299e1;
+}
+.mhf-button.mhf-button-text.mhf-button-hyperlink:hover {
+  color: #2b6cb0;
+}
+.mhf-button.mhf-button-text.mhf-button-hyperlink:active {
+  color: #2c5282;
+}
+/*!
+ * Copyright (c) 2015 - 2020 Molkobain.
+ *
+ * This file is part of licensed extension.
+ *
+ * Use of this extension is bound by the license you purchased. A license grants you a non-exclusive and non-transferable right to use and incorporate the item in your personal or commercial projects. There are several licenses available (see https://www.molkobain.com/usage-licenses/ for more informations)
+ */
 /* Loader */
 .mhf-loader {
   display: flex;
@@ -63,7 +353,7 @@
   width: 100%;
   height: 100%;
   z-index: 5;
-  background-color: rgba(0, 0, 0, 0.20);
+  background-color: rgba(0, 0, 0, 0.2);
   /* Alpha channel instead of opacity property, otherwise, content will be transparent too */
   backdrop-filter: blur(2px);
 }
@@ -75,7 +365,16 @@
 .mhf-loader .fa-spin {
   animation-duration: 1s;
 }
+/*!
+ * Copyright (c) 2015 - 2020 Molkobain.
+ *
+ * This file is part of licensed extension.
+ *
+ * Use of this extension is bound by the license you purchased. A license grants you a non-exclusive and non-transferable right to use and incorporate the item in your personal or commercial projects. There are several licenses available (see https://www.molkobain.com/usage-licenses/ for more informations)
+ */
 /* Panels: Simple panel with an header and a body to display content nicely */
+/* Variables */
+/* Classes */
 .mhf-panel {
   position: relative;
   margin-bottom: 3rem;
@@ -100,7 +399,7 @@
   right: 0;
 }
 .mhf-panel .mhf-p-header .mhf-ph-actions .mhf-ph-toggler {
-  color: #ea7d1e;
+  color: #EA7D1E;
   cursor: pointer;
   transition-property: transform;
   transition-duration: 0.2s;
@@ -112,7 +411,7 @@
   /* Must be below header */
   margin-top: 0;
   padding: 0.3rem;
-  background-color: #fff;
+  background-color: #ffffff;
   box-shadow: 0 1px 1px rgba(0, 0, 0, 0.15);
   transition: all 0.2s ease-in-out;
 }
@@ -143,33 +442,18 @@
 .mhf-panel.mhf-collapsed .mhf-p-body:empty::after {
   content: "";
 }
-/* Tooltips */
-.mhf-tooltip {
-  /* qTip tooltips */
-}
-.mhf-tooltip.qtip .qtip-tip {
-  z-index: 1;
-  /* To put tip above wrapper box-shadow */
-}
-.mhf-tooltip.qtip .qtip-wrapper {
-  box-shadow: 0 2px 15px 2px rgba(0, 0, 0, 0.15);
-}
-.mhf-tooltip.qtip .qtip-wrapper .qtip-contentWrapper {
-  border: none !important;
-}
-.mhf-tooltip.qtip .qtip-wrapper .qtip-contentWrapper .qtip-content {
-  padding: 9px 9px !important;
-}
-.mhf-tooltip.qtip .qtip-wrapper .qtip-contentWrapper .qtip-content img {
-  max-width: 100%;
-  height: initial !important;
-  /* !important to overload the height in the style attribute of the image, otherwise image ratio is wicked */
-}
+/*!
+ * Copyright (c) 2015 - 2020 Molkobain.
+ *
+ * This file is part of licensed extension.
+ *
+ * Use of this extension is bound by the license you purchased. A license grants you a non-exclusive and non-transferable right to use and incorporate the item in your personal or commercial projects. There are several licenses available (see https://www.molkobain.com/usage-licenses/ for more informations)
+ */
 /* Toggle buttons: Inspired by Mauricio Allende @ https://codepen.io/mallendeo/pen/eLIiG */
+/* Variables */
+/* Classes */
 .mhf-toggle-button {
   font-size: 12pt;
-  /* Themes */
-  /* - Flat */
 }
 .mhf-toggle-button .mhf-tb-input {
   display: none;
@@ -199,6 +483,8 @@
 }
 .mhf-toggle-button .mhf-tb-input:checked + .mhf-tb-button::after {
   left: 50%;
+  /* Themes */
+  /* - Flat */
 }
 .mhf-toggle-button.mhf-tb-flat .mhf-tb-input + .mhf-tb-button {
   padding: 2px;
@@ -209,12 +495,12 @@
 }
 .mhf-toggle-button.mhf-tb-flat .mhf-tb-input + .mhf-tb-button::after {
   border-radius: 50%;
-  background-color: #fff;
+  background-color: #ffffff;
   box-shadow: 0 1px 1px 1px rgba(0, 0, 0, 0.12);
   transition: all 0.2s ease;
 }
 .mhf-toggle-button.mhf-tb-flat .mhf-tb-input:checked + .mhf-tb-button {
-  background-color: #ea7d1e;
+  background-color: #EA7D1E;
 }
 .mhf-toggle-button.mhf-tb-flat .mhf-tb-input:disabled + .mhf-tb-button {
   background-color: #d1d1d1;
@@ -238,101 +524,32 @@
   vertical-align: initial;
   /* Reset vertical alignment if floated */
 }
-/* Buttons */
-.mhf-button {
-  padding: 0.35rem 0.5rem;
-  border: 1px solid transparent;
-  border-radius: 2px;
-  cursor: pointer;
-  transition-property: background-color;
-  transition-duration: 0.1s;
-  transition-timing-function: linear;
+/*!
+ * Copyright (c) 2015 - 2020 Molkobain.
+ *
+ * This file is part of licensed extension.
+ *
+ * Use of this extension is bound by the license you purchased. A license grants you a non-exclusive and non-transferable right to use and incorporate the item in your personal or commercial projects. There are several licenses available (see https://www.molkobain.com/usage-licenses/ for more informations)
+ */
+/* Tooltips */
+.mhf-tooltip {
+  /* qTip tooltips */
 }
-.mhf-button.mhf-button-simple {
-  min-width: 2.5rem;
-  font-weight: bold;
-  background-color: #2d3748;
-  color: white;
-  border-color: #2d3748;
+.mhf-tooltip.qtip .qtip-tip {
+  z-index: 1;
+  /* To put tip above wrapper box-shadow */
 }
-.mhf-button.mhf-button-simple.mhf-button-primary {
-  background-color: #ea7d1e;
-  color: white;
-  border-color: #ea7d1e;
+.mhf-tooltip.qtip .qtip-wrapper {
+  box-shadow: 0 2px 15px 2px rgba(0, 0, 0, 0.15);
 }
-.mhf-button.mhf-button-simple.mhf-button-primary:hover {
-  background-color: #da7014;
+.mhf-tooltip.qtip .qtip-wrapper .qtip-contentWrapper {
+  border: none !important;
 }
-.mhf-button.mhf-button-simple.mhf-button-primary:active {
-  background-color: #c36412;
+.mhf-tooltip.qtip .qtip-wrapper .qtip-contentWrapper .qtip-content {
+  padding: 9px 9px !important;
 }
-.mhf-button.mhf-button-simple:hover {
-  background-color: #232b38;
-}
-.mhf-button.mhf-button-simple:active {
-  background-color: #191f29;
-}
-.mhf-button.mhf-button-outline {
-  font-weight: bold;
-  background-color: white;
-  color: #2d3748;
-  border-color: #2d3748;
-}
-.mhf-button.mhf-button-outline.mhf-button-primary {
-  background-color: white;
-  color: #ea7d1e;
-  border-color: #ea7d1e;
-}
-.mhf-button.mhf-button-outline.mhf-button-primary:hover {
-  background-color: #f2f2f2;
-}
-.mhf-button.mhf-button-outline.mhf-button-primary:active {
-  background-color: #e6e6e6;
-}
-.mhf-button.mhf-button-outline.mhf-button-hyperlink {
-  background-color: white;
-  color: #1c94c4;
-  border-color: #1c94c4;
-}
-.mhf-button.mhf-button-outline.mhf-button-hyperlink:hover {
-  background-color: #f2f2f2;
-}
-.mhf-button.mhf-button-outline.mhf-button-hyperlink:active {
-  background-color: #e6e6e6;
-}
-.mhf-button.mhf-button-outline:hover {
-  background-color: #f2f2f2;
-}
-.mhf-button.mhf-button-outline:active {
-  background-color: #e6e6e6;
-}
-.mhf-button.mhf-button-text {
-  font-weight: bold;
-  background-color: transparent;
-  color: #2d3748;
-  border-color: transparent;
-}
-.mhf-button.mhf-button-text.mhf-button-primary {
-  color: #ea7d1e;
-}
-.mhf-button.mhf-button-text.mhf-button-primary:hover {
-  color: #da7014;
-}
-.mhf-button.mhf-button-text.mhf-button-primary:active {
-  color: #c36412;
-}
-.mhf-button.mhf-button-text.mhf-button-hyperlink {
-  color: #1c94c4;
-}
-.mhf-button.mhf-button-text.mhf-button-hyperlink:hover {
-  color: #1983ae;
-}
-.mhf-button.mhf-button-text.mhf-button-hyperlink:active {
-  color: #167297;
-}
-.mhf-button.mhf-button-text:hover {
-  color: #232b38;
-}
-.mhf-button.mhf-button-text:active {
-  color: #191f29;
+.mhf-tooltip.qtip .qtip-wrapper .qtip-contentWrapper .qtip-content img {
+  max-width: 100%;
+  height: initial !important;
+  /* !important to overload the height in the style attribute of the image, otherwise image ratio is wicked */
 }

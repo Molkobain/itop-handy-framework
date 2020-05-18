@@ -6,8 +6,27 @@
  * Use of this extension is bound by the license you purchased. A license grants you a non-exclusive and non-transferable right to use and incorporate the item in your personal or commercial projects. There are several licenses available (see https://www.molkobain.com/usage-licenses/ for more informations)
  */
 
-/*****************************************************/
-/* This file is deprecated, use toolbox.scss instead */
-/*****************************************************/
+/* Helpers */
+.mhf-pull-left{
+	float: left;
 
-@import '../env-production/molkobain-handy-framework/asset/css/toolbox.scss';
+	&::after{
+		clear: both;
+	}
+}
+.mhf-pull-right{
+	float: right;
+
+	&::after{
+		clear: both;
+	}
+}
+.mhf-hide{
+	display: none !important;
+}
+
+/* Templates: HTML markup to be cloned for creating elements, always hidden */
+.mhf-templates{
+	@extend %mhf-reset-box-sizing;
+	display: none;
+}
