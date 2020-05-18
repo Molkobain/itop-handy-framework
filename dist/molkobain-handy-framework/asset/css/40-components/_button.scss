@@ -265,6 +265,10 @@ $button-themes: (
 		font-weight: bold;
 	}
 
+	.mhf-button-icon{
+		margin-right: 0.6rem;
+	}
+
 	@each $type, $styles in $button-themes {
 		&.mhf-button-#{$type} {
 			@each $style, $properties in $styles {

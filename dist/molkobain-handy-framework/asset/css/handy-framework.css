@@ -170,6 +170,9 @@
 .mhf-button.mhf-button-text {
   font-weight: bold;
 }
+.mhf-button .mhf-button-icon {
+  margin-right: 0.6rem;
+}
 .mhf-button.mhf-button-simple {
   /* Default style is put in the base button type selector... */
   color: white;
