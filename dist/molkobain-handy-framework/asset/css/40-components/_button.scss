@@ -12,7 +12,6 @@
 $button-padding: (
 	medium: 0.4rem 0.8rem,
 );
-
 $button-themes: (
 	simple: (
 		default: (
@@ -223,6 +222,21 @@ $button-themes: (
 	)
 );
 
+/* Mixins */
+@mixin button-properties($properties){
+	@each $property-name, $property-value in $properties {
+		@if ($property-name == 'hover') or ($property-name == 'active') or ($property-name == 'focus') {
+			&:#{$property-name} {
+				@each $subproperty-name, $subproperty-value in $property-value {
+					#{$subproperty-name}: $subproperty-value;
+				}
+			}
+		} @else {
+			#{$property-name}: $property-value;
+		}
+	}
+}
+
 /* Classes */
 .mhf-button {
 	@extend %mhf-reset-box-sizing;
@@ -237,6 +251,9 @@ $button-themes: (
 	&:active{
 		outline: none;
 	}
+	&[disabled]{
+		cursor: not-allowed;
+	}
 
 	&.mhf-button-simple {
 		min-width: 2.5rem;
@@ -247,41 +264,24 @@ $button-themes: (
 	&.mhf-button-text {
 		font-weight: bold;
 	}
-	&.mhf-button-disabled{
-		cursor: not-allowed;
-	}
 
 	@each $type, $styles in $button-themes {
 		&.mhf-button-#{$type} {
 			@each $style, $properties in $styles {
 				@if($style == 'default'){
 					/* Default style is put in the base button type selector... */
-					@each $property-name, $property-value in $properties {
-						@if ($property-name == 'hover') or ($property-name == 'active') or ($property-name == 'focus') {
-							&:#{$property-name} {
-								@each $subproperty-name, $subproperty-value in $property-value {
-									#{$subproperty-name}: $subproperty-value;
-								}
-							}
-						} @else {
-							#{$property-name}: $property-value;
-						}
+					@include button-properties($properties);
+				}
+				@else if($style == 'disabled'){
+					&[disabled]{
+						/* .. disabled button is a particular style... */
+						@include button-properties($properties);
 					}
 				}
 				@else{
 					&.mhf-button-#{$style} {
 						/* .. only specific styles have a dedicated class selector */
-						@each $property-name, $property-value in $properties {
-							@if ($property-name == 'hover') or ($property-name == 'active') or ($property-name == 'focus') {
-								&:#{$property-name} {
-									@each $subproperty-name, $subproperty-value in $property-value {
-										#{$subproperty-name}: $subproperty-value;
-									}
-								}
-							} @else {
-								#{$property-name}: $property-value;
-							}
-						}
+						@include button-properties($properties);
 					}
 				}
 			}
