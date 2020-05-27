@@ -16,6 +16,9 @@
 @mixin border-radius-500{
 	border-radius: 5px;
 }
+@mixin border-radius-600{
+	border-radius: 8px;
+}
 @mixin border-radius-full{
 	border-radius: 100%;
 }
