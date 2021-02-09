@@ -15,8 +15,7 @@
 /********************************************************************************/
 /* The toolbox is meant to be used by other SCSS files to ease SCSS development */
 /********************************************************************************/
-/* Variables from iTop */
-@import '../datamodels/2.x/itop-portal-base/portal/web/css/variables.scss';
+
 /*!
  * Copyright (C) 2013-2020 Combodo SARL
  *
