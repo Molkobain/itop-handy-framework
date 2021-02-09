@@ -5,9 +5,9 @@
 	<author><![CDATA[Guillaume Lajarige]]></author>
 	<label><![CDATA[Molkobain's handy framework]]></label>
 	<description><![CDATA[A bunch of Core & UI helpers to be used by other extensions]]></description>
-	<version>1.6.0</version>
-	<release_date>2020-05-08</release_date>
-	<version_description><![CDATA[Add new button styles]]></version_description>
+	<version>1.6.1</version>
+	<release_date>2021-02-09</release_date>
+	<version_description><![CDATA[Remove unnecessary @import from compiled file]]></version_description>
 	<itop_version_min>2.4.0</itop_version_min>
 	<status>stable</status>
 	<mandatory>false</mandatory>
