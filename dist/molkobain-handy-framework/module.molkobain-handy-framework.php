@@ -23,7 +23,9 @@ SetupWebPage::AddModule(
 
 		// Setup
 		//
-		'dependencies' => array(),
+		'dependencies' => array(
+			'itop-welcome-itil/2.6.0 || itop-structure/3.0.0', // Ensure installation on iTop 2.6+ only
+		),
 		'mandatory' => true,
 		'visible' => false,
 
