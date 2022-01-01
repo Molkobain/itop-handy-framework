@@ -52,7 +52,7 @@ Toggle `.mhf-hide` class on it to hide / show it.
 * `StringHelper::ToCamelCase($sInput)` transforms a snake case string into a camel case string (eg. `"some_string" => "SomeString"`) 
 
 ## Compatibility
-Compatible with iTop 2.4+
+Compatible with iTop 2.6+
 
 ## Downloads
 Stable releases can be found on the [releases page](https://github.com/Molkobain/itop-handy-framework/releases).
