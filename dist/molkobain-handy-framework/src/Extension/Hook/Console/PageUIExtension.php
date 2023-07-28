@@ -9,7 +9,7 @@
 
 namespace Molkobain\iTop\Extension\HandyFramework\Hook\Console;
 
-use iPageUIExtension;
+use AbstractPageUIExtension;
 use iTopWebPage;
 use utils;
 use Molkobain\iTop\Extension\HandyFramework\Helper\ConfigHelper;
@@ -19,7 +19,7 @@ use Molkobain\iTop\Extension\HandyFramework\Helper\ConfigHelper;
  *
  * @package Molkobain\iTop\Extension\HandyFramework\Console\Extension
  */
-class PageUIExtension implements iPageUIExtension
+class PageUIExtension extends AbstractPageUIExtension
 {
 	/**
 	 * @inheritdoc
@@ -41,30 +41,10 @@ class PageUIExtension implements iPageUIExtension
 		}
 
 		// Portal CSS path (for compilation of the global stylesheet)
-		if (ConfigHelper::IsRunningiTop27OrNewer()) {
-			$sPortalCssBaseRelPath = 'datamodels/2.x/itop-portal-base/portal/public/css/';
-		} else {
-			$sPortalCssBaseRelPath = 'datamodels/2.x/itop-portal-base/portal/web/css/';
-		}
+		$sPortalCssBaseRelPath = 'datamodels/2.x/itop-portal-base/portal/public/css/';
 
 		$aScssImportPaths = array(APPROOT.$sModuleCssBaseRelPath, APPROOT.$sPortalCssBaseRelPath);
 		$oPage->add_linked_stylesheet(utils::GetAbsoluteUrlAppRoot().utils::GetCSSFromSASS($sModuleCssBaseRelPath.'handy-framework.scss', $aScssImportPaths));
 		$oPage->add_linked_script(ConfigHelper::GetAbsoluteModuleUrl() . 'asset/js/handy-framework.js');
-	}
-
-	/**
-	 * @inheritdoc
-	 */
-	public function GetSouthPaneHtml(iTopWebPage $oPage)
-	{
-		// Nothing to do
-	}
-
-	/**
-	 * @inheritdoc
-	 */
-	public function GetBannerHtml(iTopWebPage $oPage)
-	{
-		// Nothing to do
 	}
 }
