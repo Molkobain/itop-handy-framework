@@ -6,8 +6,11 @@
 	<label><![CDATA[Molkobain's handy framework]]></label>
 	<description><![CDATA[A bunch of Core & UI helpers to be used by other extensions]]></description>
 	<version>1.10.0</version>
-	<release_date>2023-03-01</release_date>
-	<version_description><![CDATA[Raise iTop min. version to 2.7]]></version_description>
+	<release_date>2023-07-30</release_date>
+	<version_description><![CDATA[
+  * Raise iTop min. version to 2.7
+  * Migrate deprecated APIs for full compatibility with future iTop version
+  * Add ConfigHelper::IsRunningiTop31OrNewer method]]></version_description>
 	<itop_version_min>2.7.0</itop_version_min>
 	<status>stable</status>
 	<mandatory>false</mandatory>
