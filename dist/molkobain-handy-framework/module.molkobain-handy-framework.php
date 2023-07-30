@@ -40,6 +40,7 @@ SetupWebPage::AddModule(
 			'src/Core/AttributeMHFRackUnit.php',
 		    // Explicitly load APIs
 			'src/Extension/Hook/Console/PageUIExtension.php',
+			'src/Extension/Hook/Console/PageUIBlockExtension.php',
 			'src/Extension/Hook/Portal/PortalUIExtension.php',
 		),
 		'webservice' => array(
