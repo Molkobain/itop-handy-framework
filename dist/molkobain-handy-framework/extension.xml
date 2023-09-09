@@ -5,12 +5,10 @@
 	<author><![CDATA[Guillaume Lajarige]]></author>
 	<label><![CDATA[Molkobain's handy framework]]></label>
 	<description><![CDATA[A bunch of Core & UI helpers to be used by other extensions]]></description>
-	<version>1.10.0</version>
+	<version>1.10.1</version>
 	<release_date>2023-07-30</release_date>
 	<version_description><![CDATA[
-  * Raise iTop min. version to 2.7
-  * Migrate deprecated APIs for full compatibility with future iTop version
-  * Add ConfigHelper::IsRunningiTop31OrNewer method]]></version_description>
+  * Fix regression in iTop 3.0+]]></version_description>
 	<itop_version_min>2.7.0</itop_version_min>
 	<status>stable</status>
 	<mandatory>false</mandatory>
