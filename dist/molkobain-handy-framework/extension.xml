@@ -5,12 +5,12 @@
 	<author><![CDATA[Guillaume Lajarige]]></author>
 	<label><![CDATA[Molkobain's handy framework]]></label>
 	<description><![CDATA[A bunch of Core & UI helpers to be used by other extensions]]></description>
-	<version>1.11.0</version>
-	<release_date>2026-08-03</release_date>
+	<version>1.12.0</version>
+	<release_date>2026-09-21</release_date>
 	<version_description><![CDATA[
-* Add compatibility with iTop 3.3+
-* Increase min. iTop version to 3.2]]></version_description>
-	<itop_version_min>3.2.0</itop_version_min>
+* Increase min. iTop version to 3.2.1
+* Fix SCSS import issue with iTop 3.3+]]></version_description>
+	<itop_version_min>3.2.1</itop_version_min>
 	<status>stable</status>
 	<mandatory>false</mandatory>
 	<more_info_url>https://github.com/Molkobain/itop-handy-framework</more_info_url>
